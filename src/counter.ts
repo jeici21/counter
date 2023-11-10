@@ -2,7 +2,7 @@ import $ from "jquery";
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 
-export function setupCounter() {
+export const setupCounter = () => {
   let counter = 0
   const setCounter = (count: number) => {
     counter = count
