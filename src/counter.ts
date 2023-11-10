@@ -4,10 +4,12 @@ import viteLogo from '/vite.svg'
 
 export const setupCounter = () => {
   let counter = 0
+
   const setCounter = (count: number) => {
     counter = count
     $('#counter').html(`count is ${counter}`)
   }
+  
   $('#counter').on('click', () => setCounter(counter + 1))
   setCounter(0)
 }
